@@ -2,7 +2,7 @@ def ATM(money , request):
 	if request > money:
 		print "Your Account value is " + str(money)
 		print  "Check your request plz"
-	if request < 0:
+	elif request < 0 or money < 0:
 		print "Check your request plz"
 		return
 	while request <= money and request>0:
@@ -22,4 +22,4 @@ def ATM(money , request):
 			print "give " + str(request)
 			request = 0
 
-ATM(500, 277)
+ATM(500, 272)
