@@ -14,7 +14,7 @@ def ATM(money , request):
 		elif request >= 50:
 			print "give 50"
 			request = request - 50
-			money = money - request - 50
+			money = money - 50
 		elif request >= 10:
 			print "give 10"
 			request = request - 10
