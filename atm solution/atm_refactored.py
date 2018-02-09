@@ -1,8 +1,9 @@
 def ATM(money , request):
 	print "Current balance : " + str(money)
 	if request > money:
-		print "Current balance : " + str(money)
 		print  "Check your request plz"
+		print "Current balance : " + str(money)
+		return
 	elif request < 0:
 		print "Check your request plz"
 		return
@@ -31,4 +32,4 @@ def ATM(money , request):
 	
 	print "Current balance : " + str(money) 
 
-ATM(500, 204)
+ATM(500, 600)
