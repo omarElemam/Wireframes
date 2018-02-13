@@ -1,12 +1,11 @@
-from models import Member
-from models import Post
+import models
 
-member1 = Member("Ahmed", "23")
-member2 = Member("Omar", "20")
+member1 = models.Member("Ahmed", "23")
+member2 = models.Member("Omar", "20")
 
-post1 = Post("post1_title", "post1_content")
-post2 = Post("post2_title", "post2_content")
-post3 =	Post("post3_title", "post3_content")
+post1 = models.Post("post1_title", "post1_content")
+post2 = models.Post("post2_title", "post2_content")
+post3 =	models.Post("post3_title", "post3_content")
 
 
 #Check ---------------------------
