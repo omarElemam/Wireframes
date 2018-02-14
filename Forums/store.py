@@ -5,8 +5,7 @@ class MemberStore:
       return(MemberStore.members)
 
   def add(self, member):
-      self.member = member
-      MemberStore.members.append(self.member)
+      MemberStore.members.append(member)
 
 #--------------------------------------
 class PostStore:
@@ -16,5 +15,4 @@ class PostStore:
       return(PostStore.posts)
 
   def add(self, post):
-      self.post = post
-      PostStore.posts.append(self.post)
+      PostStore.posts.append(post)
