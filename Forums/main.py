@@ -1,4 +1,5 @@
 import models
+import store
 
 member1 = models.Member("Ahmed", "23")
 member2 = models.Member("Omar", "20")
@@ -9,8 +10,16 @@ post3 =	models.Post("post3_title", "post3_content")
 
 
 #Check ---------------------------
-print(member1.name)
-print(member1.age)
+member_store = store.MemberStore()
+member_store.add(member1)
+member_store.add(member2)
 
-print(post1.title)
-print(post1.content)
+post_store = store.PostStore()
+post_store.add(post1)
+post_store.add(post2)
+
+member_store.get_all()
+post_store.get_all()
+
+
+
