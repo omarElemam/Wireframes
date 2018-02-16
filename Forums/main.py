@@ -21,5 +21,10 @@ post_store.add(post2)
 member_store.get_all()
 post_store.get_all()
 
+membert = store.MemberStore()
+
+print(membert.get_by_id(0).name)
+
+membert.entity_exist(member1)
 
 
