@@ -18,17 +18,20 @@ class MemberStore:
          return False
         
   def get_by_id(self, id):
-     all_members = self.get_all()
-        for member in all_members:
-            if member.id ==  id:
-                return member
+    all_members = self.get_all()
+    for member in all_members:
+      if member ==  all_members[id -1]:
+        return member
 
-  def delete(self, member):
-    if self.entity_exists(member) :
-      MemberStore.members.remove(member)
-      print (member + " is deleted")
+  def delete(self, id):
+    if self.entity_exist(id) :
+      MemberStore.members.remove(members[id])
+      print (members[id] + " is deleted")
     else :
-      print (member + " doesn't exist")
+      print (members[id] + " doesn't exist")
+
+  def update(self, member):
+        MemberStore.members[member.id -1] = member
 
 #--------------------------------------
 class PostStore:
